@@ -44,7 +44,7 @@ class Solution:
         # TODO: Write code below to return a bool with the solution to the prompt
         x = len(pool)
         for i in cost:
-            for i in pool:
+            if i in pool:
                 pool = pool.replace(i, '', 1)
                 cost = cost.replace(i, '', 1)
                 x -=1
